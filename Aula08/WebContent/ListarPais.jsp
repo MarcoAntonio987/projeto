@@ -25,7 +25,7 @@
                             <h4 class="modal-title" id="modalLabel">Excluir Pais</h4>
                         </div>
                         <div class="modal-body">
-                            Deseja realmente excluir este País?
+                            Deseja realmente excluir este país?
                         </div>
                         <div class="modal-footer">
                             <form action="controller.do" method="post">
@@ -50,9 +50,9 @@
 
                         <div class="col-md-6">
                             <div class="input-group h2">
-                                <input name="data[search]" class="form-control" id="search" type="text" placeholder="Pesquisar Pais (deixe vazio para trazer todos)">
+                                <input name="data[search]" class="form-control" id="search" type="text" placeholder="Pesquisar País (deixe vazio para trazer todos)">
                                 <span class="input-group-btn">
-                <button class="btn btn-primary" type="submit" name="acao" value="buscar">
+                <button class="btn btn-primary" type="submit" name="command" value="ListarPaisBuscar">
                     <span class="glyphicon glyphicon-search"></span>
                                 </button>
                                 </span>
@@ -76,7 +76,7 @@
                                     <th>ID</th>
                                     <th>Nome</th>
                                     <th>Populacao</th>
-                                    <th>area</th>
+                                    <th>Area</th>
                                     <th class="actions">Ações</th>
                                 </tr>
                             </thead>
@@ -96,11 +96,11 @@
                                                 ${pais.area }
                                             </td>
                                             <td class="actions">
-                                              <a class="btn btn-success btn-xs" href="controller.do?command=VisualizarPais&id=${pais.id }">Visualizar</a>
+                                                <a class="btn btn-success btn-xs" href="controller.do?command=VisualizarPais&id=${pais.id }">Visualizar</a>
                                                 <a class="btn btn-warning btn-xs" href="controller.do?command=EditarPais&id=${pais.id }">Editar</a>
                                                 <button id="btn${pais.id }%>" type="button" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#delete-modal" data-cliente="${pais.id }">Excluir</button>
                                             </td>
-                                        </tr>
+                                        </tr>             
                             </c:forEach>
 
                             </tbody>

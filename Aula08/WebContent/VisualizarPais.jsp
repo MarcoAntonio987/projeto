@@ -53,7 +53,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-6">
-                            <p><strong>Populacao</strong>
+                            <p><strong>Populacaor</strong>
                             </p>
                             <p>
                                 ${pais.populacao }

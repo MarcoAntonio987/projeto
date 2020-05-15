@@ -19,24 +19,24 @@
     <!-- Container Principal -->
     <div id="main" class="container">
         <h3 class="page-header">Incluir Pais</h3>
-        <!-- Formulario para inclusao de pais -->
+        <!-- Formulario para inclusao de paises -->
         <form action="controller.do" method="post">
             <!-- area de campos do form -->
             <div class="row">
                 <div class="form-group col-md-12">
                     <label for="nome">Nome</label>
-                    <input type="text" class="form-control" name="nome" id="nome" required maxlength="100" placeholder="nome">
+                    <input type="text" class="form-control" name="nome" id="nome" required maxlength="100" placeholder="nome completo">
                 </div>
             </div>
             <div class="row">
                 <div class="form-group col-md-6">
-                    <label for="populacao">populacao</label>
-                    <input type="text" class="form-control" name="populacao" id="populacao" required maxlength="50" placeholder="habitantes">
+                    <label for="populacao">Populacao</label>
+                    <input type="text" class="form-control" name="populacao" id="populacao" required maxlength="50"  placeholder="Habitantes">
                 </div>
 
                 <div class="form-group col-md-6">
-                    <label for="area">area</label>
-                    <input type="text" class="form-control" name="area" id="area" required maxlength="60" placeholder="territorio">
+                    <label for="area">Area</label>
+                    <input type="text" class="form-control" name="area" id="area" required maxlength="60" placeholder="Territorio">
                 </div>
             </div>
             <hr />

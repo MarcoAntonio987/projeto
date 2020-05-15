@@ -19,21 +19,21 @@
 				<c:import url="Menu.jsp"/>
                 <!-- Container Principal -->
                 <div id="main" class="container">
-                    <h3 class="page-header">Alterar Pais #${Pais.id }</h3>
-                    <!-- Formulario para alteração de pais -->
+                    <h3 class="page-header">Alterar Pais #${pais.id }</h3>
+                    <!-- Formulario para alteração de paises -->
                     <form action="controller.do" method="post">
                         <!-- area de campos do form -->
                         <input type="hidden" name="id" value="${pais.id }" />
                         <div class="row">
                             <div class="form-group col-md-12">
                                 <label for="nome">Nome</label>
-                                <input type="text" class="form-control" name="nome" id="nome" required maxlength="100" placeholder="nome completo" value="${pais.nome }">
+                                <input type="text" class="form-control" name="nome" id="nome" required maxlength="100" placeholder="nome do país" value="${pais.nome }">
                             </div>
                         </div>
                         <div class="row">
                             <div class="form-group col-md-6">
                                 <label for="populacao">Populacao</label>
-                                <input type="text" class="form-control" name="populacao" id="populacao" required maxlength="50"  placeholder="habitantes" value="${pais.populacao }">
+                                <input type="text" class="form-control" name="populacao" id="populacao" required maxlength="50" placeholder="habitantes" value="${pais.populacao }">
                             </div>
 
                             <div class="form-group col-md-6">
